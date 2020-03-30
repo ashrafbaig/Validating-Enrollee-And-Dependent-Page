@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="IES_ValidatingEnrolleeAndDependent_Project">
+	<listeners>
+		<listener class-name="Analyzer.MyTransformer" />
+		<listener
+			class-name="com.qa.ExtentReport.ExtentReportListener" />
+	</listeners>
+
+	<test name="IES_EnrolleeAndDependent">
+		<classes>
+			<class name="com.qa.TestClasses.SelfServiceEnrolleeTest"></class>
+			<class name="com.qa.TestClasses.SelfServiceDependentTest"></class>
+		</classes>
+
+	</test>
+</suite>  
